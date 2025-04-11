@@ -10,12 +10,18 @@ The Optimized Super Chain (OSC) principle, developed by Biruk Yohannes, addresse
 The Origin of the Problem and Traditional Approaches
 While the MRO effectively resolves method resolution ambiguity, developers often face challenges in managing the flow of execution and the composition of behavior. Traditional practices and their drawbacks include:
 
-TRADITIONAL PRACTICE                               | DRAWBACK
-__________________________________________________ |___________________________________________________________________
-Using multiple super() calls in one constructor    |  Can lead to less predictable flow and harder-to-trace execution.
-Manually calling parent constructors               |  Breaks MRO and reduces flexibility.
-Creating additional helper classes haphazardly     |  Can bloat the class hierarchy without a clear pattern.
-Ignoring parent constructors                       |  Breaks encapsulation and causes uninitialized attributes.
+TRADITIONAL PRACTICE
+DRAWBACK
+Using multiple super() calls in one constructor
+Can lead to less predictable flow and harder-to-trace execution.
+Manually calling parent constructors
+Breaks MRO and reduces flexibility.
+Creating additional helper classes haphazardly
+Can bloat the class hierarchy without a clear pattern.
+Ignoring parent constructors
+Breaks encapsulation and causes uninitialized attributes.
+
+
 
 OSC offers a more principled and structured alternative to manage these complexities within the framework of cooperative multiple inheritance and the MRO.
 **Problem: Managing Complexity in Cooperative Multiple Inheritance**
