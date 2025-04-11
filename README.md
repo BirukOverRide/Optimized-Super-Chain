@@ -63,10 +63,14 @@ Promoting Better Design: OSC encourages a more thoughtful organization of inheri
 
 **Potential Impact**
 
-If OSC is adopted, it could lead to:
+**If OSC is adopted, it could lead to:**
+
 More robust and maintainable code in projects that use multiple inheritance.
+
 Reduced complexity and fewer errors in complex inheritance hierarchies.
+
 Improved collaboration among developers working on such projects.
+
 A more standardized way of approaching cooperative multiple inheritance, making code easier to understand across different projects.
 
 **Here are some concise potential limitations of the OSC Principle:**
