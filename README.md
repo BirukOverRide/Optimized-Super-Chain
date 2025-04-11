@@ -15,13 +15,13 @@ While the MRO effectively resolves method resolution ambiguity, developers often
 
 **Here are the traditional practices and their drawbacks:**
 
-Using multiple super() calls in one constructor: Can lead to less predictable flow and harder-to-trace execution.
+**Using multiple super() calls in one constructor:** Can lead to less predictable flow and harder-to-trace execution.
 
-Manually calling parent constructors: Breaks MRO and reduces flexibility.
+**Manually calling parent constructors:** Breaks MRO and reduces flexibility.
 
-Creating additional helper classes haphazardly: Can bloat the class hierarchy without a clear pattern.
+**Creating additional helper classes haphazardly:** Can bloat the class hierarchy without a clear pattern.
 
-Ignoring parent constructors: Breaks encapsulation and causes uninitialized attributes.
+**Ignoring parent constructors:** Breaks encapsulation and causes uninitialized attributes.
 
 
 OSC offers a more principled and structured alternative to manage these complexities within the framework of cooperative multiple inheritance and the MRO.
