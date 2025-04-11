@@ -72,19 +72,28 @@ A more standardized way of approaching cooperative multiple inheritance, making 
 **Here are some concise potential limitations of the OSC Principle:**
 
 **Adoption/Learning:** Requires a shift from traditional, implicit approaches; steeper initial learning curve.
+
 **Verbosity:** May increase code verbosity in simpler scenarios.
+
 **Applicability:** May be restrictive in highly dynamic systems or difficult to retrofit in legacy code.
+
 **Over-Engineering:** Risk of unnecessary complexity in simple cases.
+
 **Tooling/Enforcement:** Requires tooling for consistent adherence.
+
 **Performance:** Potential (though likely negligible) performance overhead from extra method calls.
+
 **Subjectivity:** Without strict adherence, developers may interpret or apply OSC inconsistently, potentially reducing its effectiveness.
 
 **Benefits in Real-World Applications**
 
 The OSC principle can be particularly valuable in complex systems where multiple inheritance is used to combine diverse functionalities, such as:
 **Machine Learning Frameworks:** Managing the interaction of different model components or training strategies.
+
 **Web Development:** Combining mixins for request handling, authentication, and data processing.
+
 **Game Development:** Orchestrating behaviors from various character traits or component systems.
 
 **Conclusion**
+
 The Optimized Super Chain (OSC) principle offers a structured and explicit approach to cooperative multiple inheritance, enhancing the predictability, readability, and maintainability of complex object-oriented systems. By emphasizing a single super() call within methods and the use of scoped helper methods for orchestrating inherited behavior, OSC empowers developers to leverage the power of multiple inheritance more effectively while mitigating its inherent complexities. While the MRO provides the underlying mechanism for method resolution, OSC provides a valuable framework for developers to work harmoniously with the MRO, leading to more robust and understandable code.
