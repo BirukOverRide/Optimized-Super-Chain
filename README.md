@@ -30,9 +30,11 @@ OSC offers a more principled and structured alternative to manage these complexi
 **Multiple Inheritance and the Role of the MRO**
 
 Multiple inheritance allows a class to inherit from two or more parent classes. While this can provide powerful tools for code reuse, it introduces the problem of method ambiguity. Languages like Python use a Method Resolution Order (MRO) to determine the order in which methods are searched. The MRO effectively resolves this ambiguity, ensuring a deterministic execution path. However, the MRO alone does not address the challenges of controlling how inherited behaviors are combined or maintaining code clarity in complex inheritance structures.
+
 **The Need for Explicit Control Beyond MRO**
 
 Developers often require more explicit control over how methods from different parent classes are invoked and combined within a derived class. Relying solely on the implicit flow of super() through the MRO can make it difficult to orchestrate specific sequences of behavior or to integrate parent logic in a clear and maintainable way.
+
 **Direct Class Calls as an Anti-Pattern in Cooperative Inheritance**
 
 Manually calling a method from a specific class, like Class.method(), bypasses the MRO and undermines the principles of cooperative inheritance. This can lead to method conflicts, reduced flexibility, and increased maintenance difficulty. OSC explicitly discourages this practice.
@@ -42,6 +44,7 @@ Manually calling a method from a specific class, like Class.method(), bypasses t
 **Core Tenets of the OSC Principle**
 
 The OSC principle provides a structured approach to managing cooperative multiple inheritance by adhering to the following guidelines:
+
 **Single Call to super():** Each method (or scoped helper method) should contain at most one call to the super() function. This promotes a more linear and predictable flow of delegation along the MRO.
 No Direct or Manual Class Calls: Methods should always be invoked through super() to respect the MRO and maintain the cooperative inheritance chain.
 
@@ -74,6 +77,7 @@ A more standardized way of approaching cooperative multiple inheritance, making 
 **Tooling/Enforcement:** Requires tooling for consistent adherence.
 **Performance:** Potential (though likely negligible) performance overhead from extra method calls.
 **Subjectivity:** Without strict adherence, developers may interpret or apply OSC inconsistently, potentially reducing its effectiveness.
+
 **Benefits in Real-World Applications**
 
 The OSC principle can be particularly valuable in complex systems where multiple inheritance is used to combine diverse functionalities, such as:
