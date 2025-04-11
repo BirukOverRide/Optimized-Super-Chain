@@ -3,6 +3,7 @@ A Python-based design principle that enhances clarity, maintainability, and pred
 
 **A Structured and Noble Approach: The OSC Principle for Cooperative Multiple Inheritance**
 **Abstract**
+
 Multiple inheritance enables code reuse but often complicates behavior and state management in complex hierarchies. While Python’s MRO resolves method ambiguity, maintaining clear and predictable code remains difficult. The Optimized Super Chain (OSC) principle complements the MRO with a structured use of super(), emphasizing “Single Call to super()” and “Scoped Method Calls” to enhance clarity, maintainability, and robustness in cooperative multiple inheritance.
 **Introduction**
 OOP allows classes to inherit from multiple parents for code reuse and modularity. However, this introduces challenges in managing method calls, state, and execution flow, especially in scenarios like the diamond problem. While Python's MRO resolves ambiguity, developers often struggle to control inherited behavior composition and maintain code clarity. 
