@@ -25,6 +25,7 @@ Ignoring parent constructors: Breaks encapsulation and causes uninitialized attr
 
 
 OSC offers a more principled and structured alternative to manage these complexities within the framework of cooperative multiple inheritance and the MRO.
+
 **Problem: Managing Complexity in Cooperative Multiple Inheritance**
 
 **Multiple Inheritance and the Role of the MRO**
